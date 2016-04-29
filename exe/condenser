@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+require 'condenser'
+require 'condenser/app'
+
+exit Condenser::App::Main.new(ARGV).execute!
